@@ -21,9 +21,9 @@ public class Check {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("hi");
-		System.setProperty("webdriver.ie.driver","C:\\libraries\\IEDriverServer.exe");
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\Rohan\\Desktop\\chromedriver.exe");
-		DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+		//System.setProperty("webdriver.ie.driver","C:\\libraries\\IEDriverServer.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Rohan\\Desktop\\chromedriver.exe");
+		/*DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 		capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "http://www.bing.com/");
 		
 		
@@ -33,8 +33,8 @@ public class Check {
 		capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
 		capabilities.setCapability("allow-blocked-content", true);
 		capabilities.setCapability("allowBlockedContent", true);
-		WebDriver mdriver = new InternetExplorerDriver(capabilities);
-		//WebDriver mdriver = new ChromeDriver();
+		WebDriver mdriver = new InternetExplorerDriver(capabilities);*/
+		WebDriver mdriver = new ChromeDriver();
 		mdriver.get("https://www.google.co.in/");
 		System.out.println(mdriver.getCurrentUrl());
 		//while(mdriver.findElement(By.partialLinkText("Log in")).isDisplayed())
