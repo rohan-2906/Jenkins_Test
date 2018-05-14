@@ -21,7 +21,7 @@ public class Check {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("hi");
-		System.setProperty("webdriver.ie.driver","C:\\Users\\Rohan\\Desktop\\IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver","C:\\libraries\\IEDriverServer.exe");
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\Rohan\\Desktop\\chromedriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 		capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "http://www.bing.com/");
